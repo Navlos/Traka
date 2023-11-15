@@ -1,5 +1,5 @@
 <script setup>
- import Header from './components/header.vue';
+ import HeaderNav from './components/HeaderNav.vue';
  import Balance from './components/Balance.vue';
  import IncomeExpenses from './components/IncomeExpenses.vue';
  import TransactionList from './components/TransactionList.vue';
@@ -109,7 +109,7 @@ const saveToLocalStorage = () =>{
 
 
 <template>
-  <Header />
+  <HeaderNav />
   <div class="container">
     <Balance :total = "+total" />
     <IncomeExpenses :income = "+income" :expenses = "+expenses" />
